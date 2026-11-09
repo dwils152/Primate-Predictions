@@ -1,0 +1,19 @@
+# Created by setup.sh (large, machine-specific, or not ours to publish)
+env/
+.conda_pkgs/
+.hf_cache/
+model_bundle/
+model_bundle.partial/
+
+# Data and results (large; never commit these)
+genomes/
+genome_index/
+results/
+exports/
+
+# Job logs (keep the folder so Slurm can write into it)
+logs/*
+!logs/.gitkeep
+
+__pycache__/
+*.pyc
